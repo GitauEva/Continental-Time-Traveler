@@ -1,0 +1,368 @@
+body {
+  overflow-x: hidden;
+  background: url(https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.world-map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -8px;
+  left: -8px;
+  display: none;
+  filter: blur(4px);
+  z-index: -1;
+}
+.top-nav {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+h1 {
+  line-height: 0;
+}
+.top-nav p {
+  font-style: italic;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  /* bottom: 610px; */
+}
+.row-one {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-right: 10px;
+  height: 250px;
+}
+/* Asia */
+.asia-cotainer {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+}
+.asia-cotainer-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.asia-details {
+  position: relative;
+  bottom: 254px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.asia-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.asia-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.asia-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
+/* Africa */
+.africa-cotainer {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+}
+.africa-cotainer-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.africa-details {
+  position: relative;
+  bottom: 254px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.africa-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.africa-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.africa-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
+/* North America */
+.north-america-cotainer {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+}
+.north-america-cotainer-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.north-america-details {
+  position: relative;
+  bottom: 254px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.north-america-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.north-america-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.north-america-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
+/* Row two */
+.row-two {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-right: 10px;
+  height: 250px;
+}
+/* South America */
+.south-america-cotainer {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+}
+.south-america-container-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.south-america-details {
+  position: relative;
+  bottom: 254px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.south-america-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.south-america-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.south-america-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
+/* europe */
+.europe-cotainer {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+}
+.europe-container-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.europe-details {
+  position: relative;
+  bottom: 254px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.europe-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.europe-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.europe-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
+/* Australia */
+.australia-cotainer {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+}
+.australia-container-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.australia-details {
+  position: relative;
+  bottom: 254px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.australia-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.australia-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.australia-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
+/* Antarctica */
+.antarctica-container {
+  background-color: burlywood;
+  width: auto;
+  height: 250px;
+  display: none;
+}
+.antarctica-container-img {
+  position: relative;
+  width: 435px;
+  height: 250px;
+  object-fit: cover;
+  filter: blur(1px);
+}
+.antarctica-details {
+  position: relative;
+  bottom: 254px;
+  width: 435px;
+  height: 250px;
+  background-color: rgba(222, 184, 135, 0.438);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.antarctica-details h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.antarctica-details label {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+  padding-bottom: 5px;
+}
+.antarctica-details select {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(83, 66, 43, 0.788);
+  color: white;
+}
