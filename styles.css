@@ -85,6 +85,9 @@ h1 {
   background-color: rgba(83, 66, 43, 0.788);
   color: white;
 }
+#asia-message {
+  padding: 2px 2px 0;
+}
 /* Africa */
 .africa-cotainer {
   background-color: burlywood;
@@ -129,6 +132,9 @@ h1 {
   border-radius: 20px;
   background-color: rgba(83, 66, 43, 0.788);
   color: white;
+}
+#africa-message {
+  padding: 2px 2px 0;
 }
 /* North America */
 .north-america-cotainer {

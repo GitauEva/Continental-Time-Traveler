@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="icon" href="/imgs/favicon.ico" />
     <title>Continental Time Traveller</title>
   </head>
@@ -30,23 +31,28 @@
             <h3>ASIA</h3>
             <label for="asia-countries">Choose a Country in Asia:</label>
             <select id="asia-countries">
-              <option value="japan">Japan (UTC+9)</option>
-              <option value="india">India (UTC+5:30)</option>
-              <option value="saudi-arabia">Saudi Arabia (UTC+3)</option>
-              <option value="china">China (UTC+8)</option>
-              <option value="indonesia">Indonesia (UTC+7)</option>
-              <option value="thailand">Thailand (UTC+7)</option>
-              <option value="south-korea">South Korea (UTC+9)</option>
-              <option value="pakistan">Pakistan (UTC+5)</option>
-              <option value="vietnam">Vietnam (UTC+7)</option>
-              <option value="philippines">Philippines (UTC+8)</option>
+              <option value="">Please select a country in Asia.</option>
+              <option value="Japan">Japan (UTC+9)</option>
+              <option value="India">India (UTC+5:30)</option>
+              <option value="Saudi Arabia">Saudi Arabia (UTC+3)</option>
+              <option value="China">China (UTC+8)</option>
+              <option value="Indonesia">Indonesia (UTC+7)</option>
+              <option value="Thailand">Thailand (UTC+7)</option>
+              <option value="South Korea">South Korea (UTC+9)</option>
+              <option value="Pakistan">Pakistan (UTC+5)</option>
+              <option value="Vietnam">Vietnam (UTC+7)</option>
+              <option value="Philippines">Philippines (UTC+8)</option>
             </select>
-            <div class="asia-time time-message">
+            <div class="asia-time time-message" id="asia-message">
               <p>
-                You've chosen [Country]! It's currently [Day], [Date] at [Time]
-                in the vast expanse of Asia. Fun fact: Asia is the largest
-                continent, covering about 30% of the Earth's total land area!
-                Who knew time travel could be so enlightening?
+                <strong>
+                  Hello and welcome to Asia! Did you know that this vibrant
+                  continent is home to more than 2,300 languages? That&#39;s a
+                  lot of ways to say &#39;hello&#39;! Ready to explore? Just
+                  select a country from the list, and I&#39;ll share the current
+                  day, time, and date. Let&#39;s discover what time it is in
+                  this wonderful world of diversity!
+                </strong>
               </p>
             </div>
           </div>
@@ -62,23 +68,26 @@
             <h3>AFRICA</h3>
             <label for="africa-countries">Choose a Country in Africa:</label>
             <select id="africa-countries">
-              <option value="morocco">Morocco (UTC+0)</option>
-              <option value="south-africa">South Africa (UTC+2)</option>
-              <option value="kenya">Kenya (UTC+3)</option>
-              <option value="nigeria">Nigeria (UTC+1)</option>
-              <option value="ghana">Ghana (UTC+0)</option>
-              <option value="ethiopia">Ethiopia (UTC+3)</option>
-              <option value="egypt">Egypt (UTC+2)</option>
-              <option value="algeria">Algeria (UTC+1)</option>
-              <option value="sudan">Sudan (UTC+2)</option>
-              <option value="angola">Angola (UTC+1)</option>
+              <option value="">Please select a country in Africa</option>
+              <option value="Morocco">Morocco (UTC+0)</option>
+              <option value="South Africa">South Africa (UTC+2)</option>
+              <option value="Kenya">Kenya (UTC+3)</option>
+              <option value="Nigeria">Nigeria (UTC+1)</option>
+              <option value="Ghana">Ghana (UTC+0)</option>
+              <option value="Ethiopia">Ethiopia (UTC+3)</option>
+              <option value="Egypt">Egypt (UTC+2)</option>
+              <option value="Algeria">Algeria (UTC+1)</option>
+              <option value="Sudan">Sudan (UTC+2)</option>
+              <option value="Angola">Angola (UTC+1)</option>
             </select>
-            <div class="africa-time time-message">
+            <div class="africa-time time-message" id="africa-message">
               <p>
-                You've chosen [Country]! It's currently [Day], [Date] at [Time]
-                in the heart of Africa. Did you know Africa is home to the
-                world's longest river, the Nile? Who knew exploring time could
-                be this thrilling?
+                <strong>
+                  Greetings, traveler! 🐘 Africa, with its majestic wildlife and
+                  vibrant cultures, awaits you. Did you know this continent has
+                  over 3,000 different languages spoken? Select a country to
+                  discover the local day, date, and time. Time to explore!
+                </strong>
               </p>
             </div>
           </div>
@@ -96,23 +105,32 @@
               >Choose a Country in North America:</label
             >
             <select id="north-america-countries">
-              <option value="united-states">United States (UTC-5)</option>
-              <option value="mexico">Mexico (UTC-6)</option>
-              <option value="canada">Canada (UTC-5)</option>
-              <option value="guatemala">Guatemala (UTC-6)</option>
-              <option value="jamaica">Jamaica (UTC-5)</option>
-              <option value="panama">Panama (UTC-5)</option>
-              <option value="costa-rica">Costa Rica (UTC-6)</option>
-              <option value="honduras">Honduras (UTC-6)</option>
-              <option value="el-salvador">El Salvador (UTC-6)</option>
-              <option value="cuba">Cuba (UTC-5)</option>
+              <option value="">
+                Please select a country in North America.
+              </option>
+              <option value="United States">United States (UTC-5)</option>
+              <option value="Mexico">Mexico (UTC-6)</option>
+              <option value="Canada">Canada (UTC-5)</option>
+              <option value="Guatemala">Guatemala (UTC-6)</option>
+              <option value="Jamaica">Jamaica (UTC-5)</option>
+              <option value="Panama">Panama (UTC-5)</option>
+              <option value="Costa Rica">Costa Rica (UTC-6)</option>
+              <option value="Honduras">Honduras (UTC-6)</option>
+              <option value="El Salvador">El Salvador (UTC-6)</option>
+              <option value="Cuba">Cuba (UTC-5)</option>
             </select>
-            <div class="north-america-time time-message">
+            <div
+              class="north-america-time time-message"
+              id="north-america-message"
+            >
               <p>
-                You've chosen [Country]! It's currently [Day], [Date] at [Time]
-                in the land of opportunity: North America. Did you know North
-                America has the world's longest coastline, stretching over
-                88,000 miles? Who knew time zones could be this entertaining?
+                <strong>
+                  You've chosen [Country]! It's currently [Day], [Date] at
+                  [Time] in the land of opportunity: North America. Did you know
+                  North America has the world's longest coastline, stretching
+                  over 88,000 miles? Who knew time zones could be this
+                  entertaining?</strong
+                >
               </p>
             </div>
           </div>
@@ -266,5 +284,6 @@
         </div>
       </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
