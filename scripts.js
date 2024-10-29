@@ -188,3 +188,193 @@ function displayAfrica(event) {
 document
   .getElementById("africa-countries")
   .addEventListener("change", displayAfrica);
+
+//NORTH AMERICA
+function displayNorthAmerica(event) {
+  const selectedCountry = event.target.value;
+
+  let northAmericaMessage = document.getElementById("north-america-message");
+
+  northAmericaMessage.textContent = `Greetings, traveler! 🗽 North America, with its stunning landscapes and diverse cultures, invites you to explore. Did you know this continent is home to breathtaking national parks, bustling cities, and rich histories? Select a country to discover the local day, date, and time. Time to embark on your adventure!`;
+
+  let northAmericaTimeZones = [
+    {
+      country: "United States",
+      countryTimeZone: moment.tz("America/New_York"),
+      countryDay: moment.tz("America/New_York").format("dddd"),
+      countryDate: moment.tz("America/New_York").format("D"),
+      countryTime: moment.tz("America/New_York").format("h:mm A"),
+    },
+    {
+      country: "Mexico",
+      countryTimeZone: moment.tz("America/Mexico_City"),
+      countryDay: moment.tz("America/Mexico_City").format("dddd"),
+      countryDate: moment.tz("America/Mexico_City").format("D"),
+      countryTime: moment.tz("America/Mexico_City").format("h:mm A"),
+    },
+    {
+      country: "Canada",
+      countryTimeZone: moment.tz("America/Toronto"),
+      countryDay: moment.tz("America/Toronto").format("dddd"),
+      countryDate: moment.tz("America/Toronto").format("D"),
+      countryTime: moment.tz("America/Toronto").format("h:mm A"),
+    },
+    {
+      country: "Guatemala",
+      countryTimeZone: moment.tz("America/Guatemala"),
+      countryDay: moment.tz("America/Guatemala").format("dddd"),
+      countryDate: moment.tz("America/Guatemala").format("D"),
+      countryTime: moment.tz("America/Guatemala").format("h:mm A"),
+    },
+    {
+      country: "Jamaica",
+      countryTimeZone: moment.tz("America/Jamaica"),
+      countryDay: moment.tz("America/Jamaica").format("dddd"),
+      countryDate: moment.tz("America/Jamaica").format("D"),
+      countryTime: moment.tz("America/Jamaica").format("h:mm A"),
+    },
+    {
+      country: "Panama",
+      countryTimeZone: moment.tz("America/Panama"),
+      countryDay: moment.tz("America/Panama").format("dddd"),
+      countryDate: moment.tz("America/Panama").format("D"),
+      countryTime: moment.tz("America/Panama").format("h:mm A"),
+    },
+    {
+      country: "Costa Rica",
+      countryTimeZone: moment.tz("America/Costa_Rica"),
+      countryDay: moment.tz("America/Costa_Rica").format("dddd"),
+      countryDate: moment.tz("America/Costa_Rica").format("D"),
+      countryTime: moment.tz("America/Costa_Rica").format("h:mm A"),
+    },
+    {
+      country: "Honduras",
+      countryTimeZone: moment.tz("America/Tegucigalpa"),
+      countryDay: moment.tz("America/Tegucigalpa").format("dddd"),
+      countryDate: moment.tz("America/Tegucigalpa").format("D"),
+      countryTime: moment.tz("America/Tegucigalpa").format("h:mm A"),
+    },
+    {
+      country: "Nicaragua",
+      countryTimeZone: moment.tz("America/Managua"),
+      countryDay: moment.tz("America/Managua").format("dddd"),
+      countryDate: moment.tz("America/Managua").format("D"),
+      countryTime: moment.tz("America/Managua").format("h:mm A"),
+    },
+    {
+      country: "Cuba",
+      countryTimeZone: moment.tz("America/Havana"),
+      countryDay: moment.tz("America/Havana").format("dddd"),
+      countryDate: moment.tz("America/Havana").format("D"),
+      countryTime: moment.tz("America/Havana").format("h:mm A"),
+    },
+  ];
+  // Using forEach to loop through the array
+  northAmericaTimeZones.forEach((country) => {
+    // Changed name to country for clarity
+    if (country.country.toUpperCase() === selectedCountry.toUpperCase()) {
+      northAmericaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: Did you know this continent is home to 54 countries and some of the most diverse cultures in the world? Who knew time travel could be so enlightening?</strong>`;
+    }
+  });
+}
+
+document
+  .getElementById("north-america-countries")
+  .addEventListener("change", displayNorthAmerica);
+
+//SOUTH AMERICA
+function displaySouthAmerica(event) {
+  const selectedCountry = event.target.value;
+
+  let southAmericaMessage = document.getElementById("south-america-message");
+
+  southAmericaMessage.textContent = `Greetings, explorer! 🦙 South America, with its lush
+                rainforests, ancient ruins, and rhythmic beats, welcomes you!
+                Did you know it's home to the largest rainforest, the Amazon,
+                and the incredible Andes mountain range? Select a country to
+                uncover the local day, date, and time. Adventure awaits!`;
+
+  let southAmericaTimeZones = [
+    {
+      country: "Brazil",
+      countryTimeZone: moment.tz("America/Sao_Paulo"),
+      countryDay: moment.tz("America/Sao_Paulo").format("dddd"),
+      countryDate: moment.tz("America/Sao_Paulo").format("D"),
+      countryTime: moment.tz("America/Sao_Paulo").format("h:mm A"),
+    },
+    {
+      country: "Argentina",
+      countryTimeZone: moment.tz("America/Argentina/Buenos_Aires"),
+      countryDay: moment.tz("America/Argentina/Buenos_Aires").format("dddd"),
+      countryDate: moment.tz("America/Argentina/Buenos_Aires").format("D"),
+      countryTime: moment.tz("America/Argentina/Buenos_Aires").format("h:mm A"),
+    },
+    {
+      country: "Chile",
+      countryTimeZone: moment.tz("America/Santiago"),
+      countryDay: moment.tz("America/Santiago").format("dddd"),
+      countryDate: moment.tz("America/Santiago").format("D"),
+      countryTime: moment.tz("America/Santiago").format("h:mm A"),
+    },
+    {
+      country: "Colombia",
+      countryTimeZone: moment.tz("America/Bogota"),
+      countryDay: moment.tz("America/Bogota").format("dddd"),
+      countryDate: moment.tz("America/Bogota").format("D"),
+      countryTime: moment.tz("America/Bogota").format("h:mm A"),
+    },
+    {
+      country: "Venezula",
+      countryTimeZone: moment.tz("America/Caracas"),
+      countryDay: moment.tz("America/Caracas").format("dddd"),
+      countryDate: moment.tz("America/Caracas").format("D"),
+      countryTime: moment.tz("America/Caracas").format("h:mm A"),
+    },
+    {
+      country: "Peru",
+      countryTimeZone: moment.tz("America/Lima"),
+      countryDay: moment.tz("America/Lima").format("dddd"),
+      countryDate: moment.tz("America/Lima").format("D"),
+      countryTime: moment.tz("America/Lima").format("h:mm A"),
+    },
+    {
+      country: "Ecuador",
+      countryTimeZone: moment.tz("America/Guayaquil"),
+      countryDay: moment.tz("America/Guayaquil").format("dddd"),
+      countryDate: moment.tz("America/Guayaquil").format("D"),
+      countryTime: moment.tz("America/Guayaquil").format("h:mm A"),
+    },
+    {
+      country: "Paraguay",
+      countryTimeZone: moment.tz("America/Asuncion"),
+      countryDay: moment.tz("America/Asuncion").format("dddd"),
+      countryDate: moment.tz("America/Asuncion").format("D"),
+      countryTime: moment.tz("America/Asuncion").format("h:mm A"),
+    },
+    {
+      country: "Bolivia",
+      countryTimeZone: moment.tz("America/La_Paz"),
+      countryDay: moment.tz("America/La_Paz").format("dddd"),
+      countryDate: moment.tz("America/La_Paz").format("D"),
+      countryTime: moment.tz("America/La_Paz").format("h:mm A"),
+    },
+    {
+      country: "Uruguay",
+      countryTimeZone: moment.tz("America/Montevideo"),
+      countryDay: moment.tz("America/Montevideo").format("dddd"),
+      countryDate: moment.tz("America/Montevideo").format("D"),
+      countryTime: moment.tz("America/Montevideo").format("h:mm A"),
+    },
+  ];
+  // Using forEach to loop through the array
+  southAmericaTimeZones.forEach((country) => {
+    // Changed name to country for clarity
+    if (country.country.toUpperCase() === selectedCountry.toUpperCase()) {
+      southAmericaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: Did you know this continent is home to 54 countries and some of the most diverse cultures in the world? Who knew time travel could be so enlightening?</strong>`;
+    }
+  });
+}
+
+document
+  .getElementById("south-america-countries")
+  .addEventListener("change", displaySouthAmerica);
