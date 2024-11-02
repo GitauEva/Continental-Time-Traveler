@@ -273,7 +273,7 @@ function displayNorthAmerica(event) {
   northAmericaTimeZones.forEach((country) => {
     // Changed name to country for clarity
     if (country.country.toUpperCase() === selectedCountry.toUpperCase()) {
-      northAmericaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: Did you know this continent is home to 54 countries and some of the most diverse cultures in the world? Who knew time travel could be so enlightening?</strong>`;
+      northAmericaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: North America is home to the largest freshwater lake in the world by surface area: Lake Superior! Spanning the US and Canada, it holds over 10% of the Earth's surface fresh water.</strong>`;
     }
   });
 }
@@ -324,7 +324,7 @@ function displaySouthAmerica(event) {
       countryTime: moment.tz("America/Bogota").format("h:mm A"),
     },
     {
-      country: "Venezula",
+      country: "Venezuela",
       countryTimeZone: moment.tz("America/Caracas"),
       countryDay: moment.tz("America/Caracas").format("dddd"),
       countryDate: moment.tz("America/Caracas").format("D"),
@@ -370,7 +370,7 @@ function displaySouthAmerica(event) {
   southAmericaTimeZones.forEach((country) => {
     // Changed name to country for clarity
     if (country.country.toUpperCase() === selectedCountry.toUpperCase()) {
-      southAmericaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: Did you know this continent is home to 54 countries and some of the most diverse cultures in the world? Who knew time travel could be so enlightening?</strong>`;
+      southAmericaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: The Amazon Rainforest in South America produces about 20% of the world's oxygen, earning it the nickname "the lungs of the planet". It's also home to over 400 billion individual trees!</strong>`;
     }
   });
 }
@@ -378,3 +378,158 @@ function displaySouthAmerica(event) {
 document
   .getElementById("south-america-countries")
   .addEventListener("change", displaySouthAmerica);
+
+//EUROPE
+function displayEurope(event) {
+  const selectedCountry = event.target.value;
+
+  let europeMessage = document.getElementById("europe-message");
+
+  europeMessage.textContent = `🏰 Hello, traveler! Europe, a blend of historic wonders, cultural treasures, and modern charm, invites you to explore! Did you know Europe is home to over 700 million people and boasts a rich tapestry of languages and traditions? Select a country to see the local day, date, and time. Your adventure begins here!`;
+
+  let europeTimeZones = [
+    {
+      country: "United Kingdom",
+      countryTimeZone: moment.tz("Europe/London"),
+      countryDay: moment.tz("Europe/London").format("dddd"),
+      countryDate: moment.tz("Europe/London").format("D"),
+      countryTime: moment.tz("Europe/London").format("h:mm A"),
+    },
+    {
+      country: "Russia",
+      countryTimeZone: moment.tz("Europe/Moscow"),
+      countryDay: moment.tz("Europe/Moscow").format("dddd"),
+      countryDate: moment.tz("Europe/Moscow").format("D"),
+      countryTime: moment.tz("Europe/Moscow").format("h:mm A"),
+    },
+    {
+      country: "Germany",
+      countryTimeZone: moment.tz("Europe/Berlin"),
+      countryDay: moment.tz("Europe/Berlin").format("dddd"),
+      countryDate: moment.tz("Europe/Berlin").format("D"),
+      countryTime: moment.tz("Europe/Berlin").format("h:mm A"),
+    },
+    {
+      country: "Spain",
+      countryTimeZone: moment.tz("Europe/Madrid"),
+      countryDay: moment.tz("Europe/Madrid").format("dddd"),
+      countryDate: moment.tz("Europe/Madrid").format("D"),
+      countryTime: moment.tz("Europe/Madrid").format("h:mm A"),
+    },
+    {
+      country: "France",
+      countryTimeZone: moment.tz("Europe/Paris"),
+      countryDay: moment.tz("Europe/Paris").format("dddd"),
+      countryDate: moment.tz("Europe/Paris").format("D"),
+      countryTime: moment.tz("Europe/Paris").format("h:mm A"),
+    },
+    {
+      country: "Greece",
+      countryTimeZone: moment.tz("Europe/Athens"),
+      countryDay: moment.tz("Europe/Athens").format("dddd"),
+      countryDate: moment.tz("Europe/Athens").format("D"),
+      countryTime: moment.tz("Europe/Athens").format("h:mm A"),
+    },
+    {
+      country: "Portugal",
+      countryTimeZone: moment.tz("Europe/Lisbon"),
+      countryDay: moment.tz("Europe/Lisbon").format("dddd"),
+      countryDate: moment.tz("Europe/Lisbon").format("D"),
+      countryTime: moment.tz("Europe/Lisbon").format("h:mm A"),
+    },
+    {
+      country: "Norway",
+      countryTimeZone: moment.tz("Europe/Oslo"),
+      countryDay: moment.tz("Europe/Oslo").format("dddd"),
+      countryDate: moment.tz("Europe/Oslo").format("D"),
+      countryTime: moment.tz("Europe/Oslo").format("h:mm A"),
+    },
+    {
+      country: "Turkey",
+      countryTimeZone: moment.tz("Turkey"),
+      countryDay: moment.tz("Turkey").format("dddd"),
+      countryDate: moment.tz("Turkey").format("D"),
+      countryTime: moment.tz("Turkey").format("h:mm A"),
+    },
+    {
+      country: "Poland",
+      countryTimeZone: moment.tz("Europe/Warsaw"),
+      countryDay: moment.tz("Europe/Warsaw").format("dddd"),
+      countryDate: moment.tz("Europe/Warsaw").format("D"),
+      countryTime: moment.tz("Europe/Warsaw").format("h:mm A"),
+    },
+  ];
+  // Using forEach to loop through the array
+  europeTimeZones.forEach((country) => {
+    // Changed name to country for clarity
+    if (country.country.toUpperCase() === selectedCountry.toUpperCase()) {
+      europeMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: Europe is home to some of the oldest universities in the world, with the University of Bologna in Italy dating back to 1088!</strong>`;
+    }
+  });
+}
+
+document
+  .getElementById("europe-countries")
+  .addEventListener("change", displayEurope);
+
+//AUSTRALIA
+function displayAustralia(event) {
+  const selectedCountry = event.target.value;
+
+  let australiaMessage = document.getElementById("australia-message");
+
+  australiaMessage.textContent = `🦘 G’day, adventurer! Australia, with its unique wildlife,
+                  sun-soaked beaches, and vast Outback, is ready to greet you!
+                  Did you know Australia has more kangaroos than people? Choose
+                  a city to check the local day, date, and time. Time to dive in
+                  Down Under!`;
+
+  let australiaTimeZones = [
+    {
+      country: "Sydney",
+      countryTimeZone: moment.tz("Australia/Sydney"),
+      countryDay: moment.tz("Australia/Sydney").format("dddd"),
+      countryDate: moment.tz("Australia/Sydney").format("D"),
+      countryTime: moment.tz("Australia/Sydney").format("h:mm A"),
+    },
+    {
+      country: "Adelaide",
+      countryTimeZone: moment.tz("Australia/Adelaide"),
+      countryDay: moment.tz("Australia/Adelaide").format("dddd"),
+      countryDate: moment.tz("Australia/Adelaide").format("D"),
+      countryTime: moment.tz("Australia/Adelaide").format("h:mm A"),
+    },
+    {
+      country: "Perth",
+      countryTimeZone: moment.tz("Australia/Perth"),
+      countryDay: moment.tz("Australia/Perth").format("dddd"),
+      countryDate: moment.tz("Australia/Perth").format("D"),
+      countryTime: moment.tz("Australia/Perth").format("h:mm A"),
+    },
+    {
+      country: "Christmas Island",
+      countryTimeZone: moment.tz("Indian/Christmas"),
+      countryDay: moment.tz("Indian/Christmas").format("dddd"),
+      countryDate: moment.tz("Indian/Christmas").format("D"),
+      countryTime: moment.tz("Indian/Christmas").format("h:mm A"),
+    },
+    {
+      country: "Cocos",
+      countryTimeZone: moment.tz("Indian/Cocos"),
+      countryDay: moment.tz("Indian/Cocos").format("dddd"),
+      countryDate: moment.tz("Indian/Cocos").format("D"),
+      countryTime: moment.tz("Indian/Cocos").format("h:mm A"),
+    },
+  ];
+  // Using forEach to loop through the array
+  australiaTimeZones.forEach((country) => {
+    // Changed name to country for clarity
+    if (country.country.toUpperCase() === selectedCountry.toUpperCase()) {
+      australiaMessage.innerHTML = `<strong>You've chosen ${selectedCountry}! It's currently ${country.countryDay}, ${country.countryDate} at ${country.countryTime} in the vast expanse of Asia.<br/ >Fun fact: Australia has more kangaroos than people! There about 50 million kangaroos across the country, while the human population is roughly half that.</strong>`;
+    }
+  });
+}
+
+document
+  .getElementById("australia-countries")
+  .addEventListener("change", displayAustralia);

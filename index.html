@@ -165,13 +165,18 @@
               <option value="Bolivia">Bolivia (UTC-4)</option>
               <option value="Uruguay">Uruguay (UTC-3)</option>
             </select>
-            <div class="south-america-message time-message">
+            <div
+              id="south-america-message"
+              class="south-america-message time-message"
+            >
               <p>
-                Greetings, explorer! 🦙 South America, with its lush
-                rainforests, ancient ruins, and rhythmic beats, welcomes you!
-                Did you know it's home to the largest rainforest, the Amazon,
-                and the incredible Andes mountain range? Select a country to
-                uncover the local day, date, and time. Adventure awaits!
+                <strong>
+                  Greetings, explorer! 🦙 South America, with its lush
+                  rainforests, ancient ruins, and rhythmic beats, welcomes you!
+                  Did you know it's home to the largest rainforest, the Amazon,
+                  and the incredible Andes mountain range? Select a country to
+                  uncover the local day, date, and time. Adventure awaits!
+                </strong>
               </p>
             </div>
           </div>
@@ -185,29 +190,31 @@
           />
           <div class="europe-details">
             <h3>EUROPE</h3>
-            <label for="europe-countries"
-              >Choose a Country in North America:</label
-            >
             <label for="europe-countries">Choose a Country in Europe:</label>
             <select id="europe-countries">
-              <option value="united-kingdom">United Kingdom (UTC+0)</option>
-              <option value="russia">Russia (UTC+3)</option>
-              <option value="germany">Germany (UTC+1)</option>
-              <option value="spain">Spain (UTC+1)</option>
-              <option value="france">France (UTC+1)</option>
-              <option value="greece">Greece (UTC+2)</option>
-              <option value="portugal">Portugal (UTC+0)</option>
-              <option value="norway">Norway (UTC+1)</option>
-              <option value="turkey">Turkey (UTC+3)</option>
-              <option value="poland">Poland (UTC+1)</option>
+              <option value="">Please select a country in Europe</option>
+              <option value="United Kingdom">United Kingdom (UTC+0)</option>
+              <option value="Russia">Russia (UTC+3)</option>
+              <option value="Germany">Germany (UTC+1)</option>
+              <option value="Spain">Spain (UTC+1)</option>
+              <option value="France">France (UTC+1)</option>
+              <option value="Greece">Greece (UTC+2)</option>
+              <option value="Portugal">Portugal (UTC+0)</option>
+              <option value="Norway">Norway (UTC+1)</option>
+              <option value="Turkey">Turkey (UTC+3)</option>
+              <option value="Poland">Poland (UTC+1)</option>
             </select>
-            <div class="europe-time time-message">
-              <p>
-                You've chosen [Country]! It's currently [Day], [Date] at [Time]
-                in the rich tapestry of Europe. Did you know Europe is home to
-                the smallest country in the world, Vatican City? Who knew time
-                could be this sophisticated?
-              </p>
+            <div id="europe-message" class="europe-time time-message">
+              <strong
+                ><p>
+                  🏰 Hello, traveler! Europe, a blend of historic wonders,
+                  cultural treasures, and modern charm, invites you to explore!
+                  Did you know Europe is home to over 700 million people and
+                  boasts a rich tapestry of languages and traditions? Select a
+                  country to see the local day, date, and time. Your adventure
+                  begins here!
+                </p></strong
+              >
             </div>
           </div>
         </div>
@@ -220,31 +227,27 @@
           />
           <div class="australia-details">
             <h3>AUSTRALIA</h3>
-            <label for="oceania-countries"
+            <label for="australia-countries"
               >Choose a Country in Australia/Oceania:</label
             >
-            <select id="oceania-countries">
-              <option value="australia">Australia (UTC+11)</option>
-              <option value="new-zealand">New Zealand (UTC+13)</option>
-              <option value="fiji">Fiji (UTC+12)</option>
-              <option value="papua-new-guinea">
-                Papua New Guinea (UTC+10)
-              </option>
-              <option value="samoa">Samoa (UTC+13)</option>
-              <option value="vanuatu">Vanuatu (UTC+11)</option>
-              <option value="solomon-islands">Solomon Islands (UTC+11)</option>
-              <option value="tonga">Tonga (UTC+13)</option>
-              <option value="kiribati">Kiribati (UTC+14)</option>
-              <option value="palau">Palau (UTC+9)</option>
+            <select id="australia-countries">
+              <option value="">Please select a country in Australia</option>
+              <option value="Sydney">Sydney (UTC+10)</option>
+              <option value="Adelaide">Adelaide (UTC+9:30)</option>
+              <option value="Perth">Perth (UTC+8)</option>
+              <option value="Christmas Island">Christmas Island (UTC+7)</option>
+              <option value="Cocos">Cocos (Keeling) Islands (UTC+6:30)</option>
             </select>
-            <div class="australia-america-time time-message">
-              <p>
-                You've chosen [Country]! It's currently [Day], [Date] at [Time]
-                in the sun-kissed regions of Australia/Oceania. Fun fact:
-                Australia is home to more than 10,000 beaches—enough to visit a
-                new one every day for over 27 years! Who knew time could be this
-                laid-back?
-              </p>
+            <div class="australia-time time-message" id="australia-message">
+              <strong>
+                <p>
+                  🦘 G’day, adventurer! Australia, with its unique wildlife,
+                  sun-soaked beaches, and vast Outback, is ready to greet you!
+                  Did you know Australia has more kangaroos than people? Choose
+                  a city to check the local day, date, and time. Time to dive in
+                  Down Under!
+                </p></strong
+              >
             </div>
           </div>
         </div>
